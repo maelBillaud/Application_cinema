@@ -7,15 +7,18 @@ const pathPoster = "https://image.tmdb.org/t/p/original";
 
 var movies;
 
+var display;
+
 async function main() {
     let input = document.getElementById("text");
     let movie = input.value;
 
     movies = await getMovies(movie);
 
-    console.log(movies);
-
     let display = document.getElementById("display_movies");
+
+    display.innerHTML = "";
+
     movies.results.forEach(movie => {
         movie.poster = pathPoster + movie.poster_path
         display.innerHTML+=
