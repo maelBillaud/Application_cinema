@@ -32,3 +32,20 @@ input::placeholder {
 img{
     margin-top: 5%;
 }
+
+#display_movies{
+}
+
+h3{
+    color: white;
+}
+
+.movie{
+    border: solid;
+    border-color: white;
+    border-radius: 5px;
+}
+
+.elt{
+    color: white;
+}
