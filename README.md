@@ -1,6 +1,5 @@
 # Application_cinema
  Création d'une application cinéma PWA
 
- ## Note
-
- Je vais continuer à améliorer mon rendu ce soir dans la soirée 
+ ## Fonctionnalités supplémentaires :
+ La recherche de film peut se faire directement en appuyant sur la touche `entrée`
