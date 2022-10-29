@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>What Watch</h1>
-    <input id="text" type="text" placeholder="Entrez le nom d'un film"><br>
-    <input id="bouton" type="button" value="Rechercher" onclick="main()"><br>
+    <input id="text" type="text" placeholder="Entrez le nom d'un film" onkeydown="searchMovieWithEnter()"><br>
+    <input id="bouton" type="button" value="Rechercher" onclick="searchMovie()"><br>
     <img src="icons/WW.png" alt="Logo">
-    <script src="script.js"></script>
     <div id="display_movies"></div>
+    <script src="script.js"></script>
 </body>
 </html>
