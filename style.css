@@ -1,4 +1,4 @@
-body, #text, input::placeholder, h1, .logo, #bouton {
+body, input::placeholder, #text {
     text-align: center;
 }
 
@@ -8,7 +8,7 @@ h1, h2, h3, .movie, .elt{
 
 body{
     background-color: black;
-    min-width: 400px;
+    min-width: auto;
     margin-inline: 20px;
 }
 
@@ -36,11 +36,6 @@ h2{
     margin-bottom: 5%;
 }
 
-.imgMovie{
-    float: left;
-    margin: 15px 25px 15px 25px;
-}
-
 #display_movies{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -50,6 +45,11 @@ h2{
     border: solid;
     border-radius: 15px;
     margin: 4%;
+}
+
+.imgMovie{
+    float: left;
+    margin: 1% 4% 1% 4%;
 }
 
 p, h3{
@@ -62,10 +62,10 @@ p{
 }
 
 .elt{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-right: 4%;
 }
 
 .title_h3{
     font-size: 1.17em;
-    font-weight: 
+    font-weight: bolder;
+}
