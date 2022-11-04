@@ -1,0 +1,22 @@
+{
+    "short_name": "WW",
+    "name": "What Watch",
+    "description": "Application de cinéma en PWA",
+    "dir": "ltr",
+    "lang": "fr",
+    "background_color": "#000000",
+    "display": "Fullscreen",
+    "Scope": "/",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "icons/WW.png",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/Pas_affiche.png",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "index.html"
+  }
