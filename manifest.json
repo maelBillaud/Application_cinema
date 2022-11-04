@@ -7,7 +7,7 @@
     "theme_color": "#000000",
     "background_color": "#000000",
     "display": "Fullscreen",
-    "Scope": "/",
+    "scope": "/",
     "orientation": "portrait",
     "icons": [
       {
