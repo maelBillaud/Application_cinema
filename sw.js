@@ -1,10 +1,11 @@
-if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js')
-    .then((reg) => {
-        // registration worked
-        console.log("Enregistrement du service réussi");
-    }).catch((error) => {
-        // registration failed
-        console.log("Erreur : " + error);
-    });
-}
+self.addEventListener("install", evt => {
+    console.log("Le service worker à été installé");
+});
+
+self.addEventListener("active", evt => {
+    console.log("Le service worker à été activé");
+});
+
+self.addEventListener("fetch", evt => {
+    console.log("Ressource récupérée " + evt.request.url);
+});

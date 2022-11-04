@@ -1,3 +1,14 @@
+if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+    .then((reg) => {
+        // registration worked
+        console.log("Enregistrement du service réussi");
+    }).catch((error) => {
+        // registration failed
+        console.log("Erreur : " + error);
+    });
+}
+
 const searchURL = 'https://api.themoviedb.org/3/search/movie?';
 const paramSearch = '&language=fr-FR&page=1&include_adult=false&query=';
 
@@ -55,8 +66,6 @@ async function searchMovie() {
 
     //Récupération de la liste des films via l'API
     movies = await getMovies(movie);
-
-    console.log(movies);
 
     let display = document.getElementById("display_movies");
 
